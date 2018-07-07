@@ -3,3 +3,6 @@ xcode_workspace: PhotoMemories.xcworkspace # path to your xcodeproj folder
 xcode_scheme: PhotoMemories
 osx_image: xcode9.4
 xcode_sdk: iphonesimulator11.4
+
+script:
+    - xcodebuild clean test -workspace PhotoMemories.xcworkspace -scheme PhotoMemories -destination "platform=iOS Simulator,name=iPhone 8,OS=11.3" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet

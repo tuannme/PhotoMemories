@@ -582,7 +582,8 @@
 			baseConfigurationReference = B5B7C2CC81E483E24515F020 /* Pods-PhotoMemories.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = SBE5S5T3FV;
 				INFOPLIST_FILE = PhotoMemories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -592,6 +593,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dream..PhotoMemories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fd3bd297-3953-457f-9d5a-9de7286335df";
+				PROVISIONING_PROFILE_SPECIFIER = PhotoDev;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -602,7 +605,8 @@
 			baseConfigurationReference = F391FC7A5460925049C59BB4 /* Pods-PhotoMemories.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = SBE5S5T3FV;
 				INFOPLIST_FILE = PhotoMemories/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -612,6 +616,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dream..PhotoMemories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fd3bd297-3953-457f-9d5a-9de7286335df";
+				PROVISIONING_PROFILE_SPECIFIER = PhotoDev;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
