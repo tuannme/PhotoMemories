@@ -1,0 +1,16 @@
+PODS:
+  - VBPiledView (1.4)
+
+DEPENDENCIES:
+  - VBPiledView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - VBPiledView
+
+SPEC CHECKSUMS:
+  VBPiledView: 591abafe1ee4dbde31dc47724520116b65db1c72
+
+PODFILE CHECKSUM: 7dcf903d0b4e5fa2e8e9d597f8505101163e6a51
+
+COCOAPODS: 1.5.3
