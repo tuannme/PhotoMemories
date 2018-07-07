@@ -1,3 +1,5 @@
 language: objective-c
 xcode_workspace: PhotoMemories.xcworkspace # path to your xcodeproj folder
-xcode_scheme: PhotoMemoriesTests
+xcode_scheme: PhotoMemories
+osx_image: xcode9.4
+xcode_sdk: iphonesimulator11.4
