@@ -1,3 +1,6 @@
 language: swift
 xcode_workspace: PhotoMemories.xcworkspace # path to your xcodeproj folder
 xcode_scheme: PhotoMemories
+before_install:
+   - rvm use system
+   - sudo gem install cocoapods -v '1.5.3'
