@@ -591,10 +591,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dream..PhotoMemories;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.PhotoMemories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fd3bd297-3953-457f-9d5a-9de7286335df";
-				PROVISIONING_PROFILE_SPECIFIER = PhotoDev;
+				PROVISIONING_PROFILE = "d275ff19-ad5a-48a3-b7ef-362c7f34f466";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.dream.PhotoMemories";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -614,10 +614,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dream..PhotoMemories;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.PhotoMemories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fd3bd297-3953-457f-9d5a-9de7286335df";
-				PROVISIONING_PROFILE_SPECIFIER = PhotoDev;
+				PROVISIONING_PROFILE = "d275ff19-ad5a-48a3-b7ef-362c7f34f466";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.dream.PhotoMemories";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -637,7 +637,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dream..PhotoMemoriesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.PhotoMemoriesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -659,7 +659,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dream..PhotoMemoriesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.PhotoMemoriesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -680,7 +680,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dream..PhotoMemoriesUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.PhotoMemoriesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -701,7 +701,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dream..PhotoMemoriesUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.PhotoMemoriesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
