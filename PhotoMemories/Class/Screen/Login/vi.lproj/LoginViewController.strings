@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "9dq-mc-XG3"; */
+"9dq-mc-XG3.normalTitle" = "Đăng ký";
+
+/* Class = "UILabel"; text = "Life is all about those memories you want to capture forever."; ObjectID = "AWa-Fa-krn"; */
+"AWa-Fa-krn.text" = "Life is all about those memories you want to capture forever.";
+
+/* Class = "UILabel"; text = "Already have an account?"; ObjectID = "Rla-VU-eSU"; */
+"Rla-VU-eSU.text" = "Bạn đã có tài khoản chưa?";
+
+/* Class = "UILabel"; text = "Memories"; ObjectID = "VnG-xn-rNE"; */
+"VnG-xn-rNE.text" = "Memories";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "a5z-eC-F9o"; */
+"a5z-eC-F9o.normalTitle" = "Đăng nhập";
