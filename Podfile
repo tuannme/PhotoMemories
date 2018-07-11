@@ -15,7 +15,7 @@ target 'PhotoMemories' do
     pod 'NVActivityIndicatorView'
     pod 'GoogleAPIClientForREST'
     pod 'ESTabBarController-swift'
-    pod 'ParallaxHeader'
+    pod 'MXSegmentedPager'
     pod 'GoogleSignIn'
     
 end

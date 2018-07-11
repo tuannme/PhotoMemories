@@ -38,10 +38,14 @@
 		2EA0708820F590F200F8AE5A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0708620F590F200F8AE5A /* CameraViewController.swift */; };
 		2EA0708920F590F200F8AE5A /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0708720F590F200F8AE5A /* CameraViewController.xib */; };
 		2EA0708B20F5958E00F8AE5A /* TabbarItemHijackContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0708A20F5958E00F8AE5A /* TabbarItemHijackContext.swift */; };
-		2EA0708E20F5996800F8AE5A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0708C20F5996800F8AE5A /* HomeTableViewCell.swift */; };
-		2EA0708F20F5996800F8AE5A /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0708D20F5996800F8AE5A /* HomeTableViewCell.xib */; };
 		2EA0709220F5A41E00F8AE5A /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0709120F5A41E00F8AE5A /* HomeHeaderView.swift */; };
 		2EA0709420F5A42A00F8AE5A /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0709320F5A42A00F8AE5A /* HomeHeaderView.xib */; };
+		2EA0709820F5ADE800F8AE5A /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0709620F5ADE800F8AE5A /* HomeCollectionViewCell.swift */; };
+		2EA0709920F5ADE800F8AE5A /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0709720F5ADE800F8AE5A /* HomeCollectionViewCell.xib */; };
+		2EA0709C20F5AE6F00F8AE5A /* HomeMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0709A20F5AE6F00F8AE5A /* HomeMenuCell.swift */; };
+		2EA0709D20F5AE6F00F8AE5A /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0709B20F5AE6F00F8AE5A /* HomeMenuCell.xib */; };
+		2EA070B720F5FE2600F8AE5A /* HomeContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA070B520F5FE2600F8AE5A /* HomeContainerViewController.swift */; };
+		2EA070B820F5FE2600F8AE5A /* HomeContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA070B620F5FE2600F8AE5A /* HomeContainerViewController.xib */; };
 		50C49FA1C9A9062CAD5D3567 /* Pods_PhotoMemories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0114B86646263CC8460AE66 /* Pods_PhotoMemories.framework */; };
 		536A864020F10EF100FAE72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536A863F20F10EF100FAE72D /* AppDelegate.swift */; };
 		536A864720F10EF300FAE72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536A864620F10EF300FAE72D /* Assets.xcassets */; };
@@ -104,10 +108,14 @@
 		2EA0708620F590F200F8AE5A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		2EA0708720F590F200F8AE5A /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 		2EA0708A20F5958E00F8AE5A /* TabbarItemHijackContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItemHijackContext.swift; sourceTree = "<group>"; };
-		2EA0708C20F5996800F8AE5A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		2EA0708D20F5996800F8AE5A /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		2EA0709120F5A41E00F8AE5A /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		2EA0709320F5A42A00F8AE5A /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
+		2EA0709620F5ADE800F8AE5A /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EA0709720F5ADE800F8AE5A /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		2EA0709A20F5AE6F00F8AE5A /* HomeMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuCell.swift; sourceTree = "<group>"; };
+		2EA0709B20F5AE6F00F8AE5A /* HomeMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMenuCell.xib; sourceTree = "<group>"; };
+		2EA070B520F5FE2600F8AE5A /* HomeContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContainerViewController.swift; sourceTree = "<group>"; };
+		2EA070B620F5FE2600F8AE5A /* HomeContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeContainerViewController.xib; sourceTree = "<group>"; };
 		4B40B2860F39266F2C2241D4 /* Pods_PhotoMemoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoMemoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		536A863C20F10EF100FAE72D /* PhotoMemories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoMemories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536A863F20F10EF100FAE72D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -175,11 +183,12 @@
 		2E033CD420F49DD70057E157 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2EA0709520F5ADCB00F8AE5A /* CollectionCell */,
 				2EA0709020F5A40800F8AE5A /* HeaderView */,
 				2E033CEB20F4A2A80057E157 /* HomeViewController.swift */,
 				2E033CEC20F4A2A80057E157 /* HomeViewController.xib */,
-				2EA0708C20F5996800F8AE5A /* HomeTableViewCell.swift */,
-				2EA0708D20F5996800F8AE5A /* HomeTableViewCell.xib */,
+				2EA070B520F5FE2600F8AE5A /* HomeContainerViewController.swift */,
+				2EA070B620F5FE2600F8AE5A /* HomeContainerViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -263,6 +272,17 @@
 				2EA0709320F5A42A00F8AE5A /* HomeHeaderView.xib */,
 			);
 			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		2EA0709520F5ADCB00F8AE5A /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				2EA0709620F5ADE800F8AE5A /* HomeCollectionViewCell.swift */,
+				2EA0709720F5ADE800F8AE5A /* HomeCollectionViewCell.xib */,
+				2EA0709A20F5AE6F00F8AE5A /* HomeMenuCell.swift */,
+				2EA0709B20F5AE6F00F8AE5A /* HomeMenuCell.xib */,
+			);
+			path = CollectionCell;
 			sourceTree = "<group>";
 		};
 		536A863320F10EF100FAE72D = {
@@ -493,12 +513,14 @@
 				2EA0708920F590F200F8AE5A /* CameraViewController.xib in Resources */,
 				536A864A20F10EF300FAE72D /* LaunchScreen.storyboard in Resources */,
 				2E033CEE20F4A2A80057E157 /* HomeViewController.xib in Resources */,
-				2EA0708F20F5996800F8AE5A /* HomeTableViewCell.xib in Resources */,
+				2EA070B820F5FE2600F8AE5A /* HomeContainerViewController.xib in Resources */,
 				2EA0708520F590E500F8AE5A /* MyPhotosViewController.xib in Resources */,
 				2EA0709420F5A42A00F8AE5A /* HomeHeaderView.xib in Resources */,
 				536A864720F10EF300FAE72D /* Assets.xcassets in Resources */,
+				2EA0709920F5ADE800F8AE5A /* HomeCollectionViewCell.xib in Resources */,
 				2E033CD520F49E6A0057E157 /* LoginViewController.xib in Resources */,
 				2E033CF320F4AF1E0057E157 /* GoogleService-Info.plist in Resources */,
+				2EA0709D20F5AE6F00F8AE5A /* HomeMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,12 +585,14 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MXPagerView/MXPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/MXParallaxHeader/MXParallaxHeader.framework",
+				"${BUILT_PRODUCTS_DIR}/MXSegmentedPager/MXSegmentedPager.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/ParallaxHeader/ParallaxHeader.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -578,12 +602,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXParallaxHeader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXSegmentedPager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParallaxHeader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,8 +650,10 @@
 				2E033CCA20F496B20057E157 /* UITableView+Extension.swift in Sources */,
 				2EA0709220F5A41E00F8AE5A /* HomeHeaderView.swift in Sources */,
 				2E033CC820F496B20057E157 /* UICollectionView+Extension.swift in Sources */,
+				2EA0709820F5ADE800F8AE5A /* HomeCollectionViewCell.swift in Sources */,
 				2E033CC620F496B20057E157 /* Date+Extension.swift in Sources */,
 				2E033CD320F49D1A0057E157 /* BaseViewModel.swift in Sources */,
+				2EA0709C20F5AE6F00F8AE5A /* HomeMenuCell.swift in Sources */,
 				2E033CCC20F496B20057E157 /* Double+Extension.swift in Sources */,
 				2E033CE020F4A0EA0057E157 /* IndicatorCustomView.swift in Sources */,
 				2E033CCE20F496B20057E157 /* String+Extension.swift in Sources */,
@@ -640,10 +668,10 @@
 				536A867220F12C8800FAE72D /* LoginViewController.swift in Sources */,
 				2E033CE920F4A1730057E157 /* ErrorTracker.swift in Sources */,
 				2E033CED20F4A2A80057E157 /* HomeViewController.swift in Sources */,
+				2EA070B720F5FE2600F8AE5A /* HomeContainerViewController.swift in Sources */,
 				2E033CE420F4A1020057E157 /* NavigationCustom.swift in Sources */,
 				2EA0707F20F590A400F8AE5A /* TabbarItemContext.swift in Sources */,
 				2E033CCF20F496B20057E157 /* AppDelegate+Extension.swift in Sources */,
-				2EA0708E20F5996800F8AE5A /* HomeTableViewCell.swift in Sources */,
 				536A867620F12CA300FAE72D /* BaseViewController.swift in Sources */,
 				536A864020F10EF100FAE72D /* AppDelegate.swift in Sources */,
 			);

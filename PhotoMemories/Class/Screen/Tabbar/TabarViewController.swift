@@ -11,7 +11,7 @@ import ESTabBarController_swift
 
 class TabarViewController: ESTabBarController {
     
-    let homeVC = HomeViewController()
+    let homeVC = HomeContainerViewController()
     let myphotoVC = MyPhotosViewController()
 
     override func viewDidLoad() {
