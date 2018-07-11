@@ -30,6 +30,18 @@
 		2E033CF120F4AE760057E157 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E033CF020F4AE760057E157 /* Constants.swift */; };
 		2E033CF320F4AF1E0057E157 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E033CF220F4AF1E0057E157 /* GoogleService-Info.plist */; };
 		2E033CF520F4B4E30057E157 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E033CF420F4B4E30057E157 /* Bundle+Extension.swift */; };
+		2EA0707A20F58FF100F8AE5A /* GloablVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0707920F58FF100F8AE5A /* GloablVariables.swift */; };
+		2EA0707E20F590A400F8AE5A /* TabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0707C20F590A400F8AE5A /* TabarViewController.swift */; };
+		2EA0707F20F590A400F8AE5A /* TabbarItemContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0707D20F590A400F8AE5A /* TabbarItemContext.swift */; };
+		2EA0708420F590E500F8AE5A /* MyPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0708220F590E500F8AE5A /* MyPhotosViewController.swift */; };
+		2EA0708520F590E500F8AE5A /* MyPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0708320F590E500F8AE5A /* MyPhotosViewController.xib */; };
+		2EA0708820F590F200F8AE5A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0708620F590F200F8AE5A /* CameraViewController.swift */; };
+		2EA0708920F590F200F8AE5A /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0708720F590F200F8AE5A /* CameraViewController.xib */; };
+		2EA0708B20F5958E00F8AE5A /* TabbarItemHijackContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0708A20F5958E00F8AE5A /* TabbarItemHijackContext.swift */; };
+		2EA0708E20F5996800F8AE5A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0708C20F5996800F8AE5A /* HomeTableViewCell.swift */; };
+		2EA0708F20F5996800F8AE5A /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0708D20F5996800F8AE5A /* HomeTableViewCell.xib */; };
+		2EA0709220F5A41E00F8AE5A /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0709120F5A41E00F8AE5A /* HomeHeaderView.swift */; };
+		2EA0709420F5A42A00F8AE5A /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA0709320F5A42A00F8AE5A /* HomeHeaderView.xib */; };
 		50C49FA1C9A9062CAD5D3567 /* Pods_PhotoMemories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0114B86646263CC8460AE66 /* Pods_PhotoMemories.framework */; };
 		536A864020F10EF100FAE72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536A863F20F10EF100FAE72D /* AppDelegate.swift */; };
 		536A864720F10EF300FAE72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536A864620F10EF300FAE72D /* Assets.xcassets */; };
@@ -84,6 +96,18 @@
 		2E033CF020F4AE760057E157 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2E033CF220F4AF1E0057E157 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E033CF420F4B4E30057E157 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		2EA0707920F58FF100F8AE5A /* GloablVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloablVariables.swift; sourceTree = "<group>"; };
+		2EA0707C20F590A400F8AE5A /* TabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabarViewController.swift; sourceTree = "<group>"; };
+		2EA0707D20F590A400F8AE5A /* TabbarItemContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarItemContext.swift; sourceTree = "<group>"; };
+		2EA0708220F590E500F8AE5A /* MyPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPhotosViewController.swift; sourceTree = "<group>"; };
+		2EA0708320F590E500F8AE5A /* MyPhotosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPhotosViewController.xib; sourceTree = "<group>"; };
+		2EA0708620F590F200F8AE5A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2EA0708720F590F200F8AE5A /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		2EA0708A20F5958E00F8AE5A /* TabbarItemHijackContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItemHijackContext.swift; sourceTree = "<group>"; };
+		2EA0708C20F5996800F8AE5A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		2EA0708D20F5996800F8AE5A /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		2EA0709120F5A41E00F8AE5A /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		2EA0709320F5A42A00F8AE5A /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		4B40B2860F39266F2C2241D4 /* Pods_PhotoMemoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoMemoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		536A863C20F10EF100FAE72D /* PhotoMemories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoMemories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536A863F20F10EF100FAE72D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,8 +175,11 @@
 		2E033CD420F49DD70057E157 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2EA0709020F5A40800F8AE5A /* HeaderView */,
 				2E033CEB20F4A2A80057E157 /* HomeViewController.swift */,
 				2E033CEC20F4A2A80057E157 /* HomeViewController.xib */,
+				2EA0708C20F5996800F8AE5A /* HomeTableViewCell.swift */,
+				2EA0708D20F5996800F8AE5A /* HomeTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -192,12 +219,50 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		2E033CEF20F4AE680057E157 /* Constants */ = {
+		2E033CEF20F4AE680057E157 /* AppConfig */ = {
 			isa = PBXGroup;
 			children = (
 				2E033CF020F4AE760057E157 /* Constants.swift */,
+				2EA0707920F58FF100F8AE5A /* GloablVariables.swift */,
 			);
-			path = Constants;
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		2EA0707B20F590A400F8AE5A /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				2EA0707C20F590A400F8AE5A /* TabarViewController.swift */,
+				2EA0707D20F590A400F8AE5A /* TabbarItemContext.swift */,
+				2EA0708A20F5958E00F8AE5A /* TabbarItemHijackContext.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		2EA0708020F590BD00F8AE5A /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				2EA0708620F590F200F8AE5A /* CameraViewController.swift */,
+				2EA0708720F590F200F8AE5A /* CameraViewController.xib */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		2EA0708120F590D200F8AE5A /* MyPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				2EA0708220F590E500F8AE5A /* MyPhotosViewController.swift */,
+				2EA0708320F590E500F8AE5A /* MyPhotosViewController.xib */,
+			);
+			path = MyPhotos;
+			sourceTree = "<group>";
+		};
+		2EA0709020F5A40800F8AE5A /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				2EA0709120F5A41E00F8AE5A /* HomeHeaderView.swift */,
+				2EA0709320F5A42A00F8AE5A /* HomeHeaderView.xib */,
+			);
+			path = HeaderView;
 			sourceTree = "<group>";
 		};
 		536A863320F10EF100FAE72D = {
@@ -256,7 +321,7 @@
 		536A866D20F12C6700FAE72D /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				2E033CEF20F4AE680057E157 /* Constants */,
+				2E033CEF20F4AE680057E157 /* AppConfig */,
 				2E033CE620F4A1650057E157 /* Helper */,
 				2E033CDD20F4A0DF0057E157 /* Views */,
 				2E033CBB20F4966D0057E157 /* Extension */,
@@ -269,6 +334,9 @@
 		536A866E20F12C6D00FAE72D /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				2EA0708120F590D200F8AE5A /* MyPhotos */,
+				2EA0708020F590BD00F8AE5A /* Camera */,
+				2EA0707B20F590A400F8AE5A /* Tabbar */,
 				2E033CD420F49DD70057E157 /* Home */,
 				536A866F20F12C7500FAE72D /* Login */,
 			);
@@ -278,8 +346,8 @@
 		536A866F20F12C7500FAE72D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				536A867020F12C8700FAE72D /* LoginViewController.swift */,
 				2E033CD720F49E6A0057E157 /* LoginViewController.xib */,
+				536A867020F12C8700FAE72D /* LoginViewController.swift */,
 				2E033CD020F49D0E0057E157 /* LoginViewModel.swift */,
 			);
 			path = Login;
@@ -422,8 +490,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E033CE520F4A1020057E157 /* NavigationCustom.xib in Resources */,
+				2EA0708920F590F200F8AE5A /* CameraViewController.xib in Resources */,
 				536A864A20F10EF300FAE72D /* LaunchScreen.storyboard in Resources */,
 				2E033CEE20F4A2A80057E157 /* HomeViewController.xib in Resources */,
+				2EA0708F20F5996800F8AE5A /* HomeTableViewCell.xib in Resources */,
+				2EA0708520F590E500F8AE5A /* MyPhotosViewController.xib in Resources */,
+				2EA0709420F5A42A00F8AE5A /* HomeHeaderView.xib in Resources */,
 				536A864720F10EF300FAE72D /* Assets.xcassets in Resources */,
 				2E033CD520F49E6A0057E157 /* LoginViewController.xib in Resources */,
 				2E033CF320F4AF1E0057E157 /* GoogleService-Info.plist in Resources */,
@@ -486,26 +558,32 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PhotoMemories/Pods-PhotoMemories-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ParallaxHeader/ParallaxHeader.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParallaxHeader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,9 +618,11 @@
 			files = (
 				2E033CC720F496B20057E157 /* Observable+Extension.swift in Sources */,
 				2E033CC920F496B20057E157 /* Int+Extension.swift in Sources */,
+				2EA0708B20F5958E00F8AE5A /* TabbarItemHijackContext.swift in Sources */,
 				2E033CEA20F4A1730057E157 /* ActivityIndicator.swift in Sources */,
 				2E033CF520F4B4E30057E157 /* Bundle+Extension.swift in Sources */,
 				2E033CCA20F496B20057E157 /* UITableView+Extension.swift in Sources */,
+				2EA0709220F5A41E00F8AE5A /* HomeHeaderView.swift in Sources */,
 				2E033CC820F496B20057E157 /* UICollectionView+Extension.swift in Sources */,
 				2E033CC620F496B20057E157 /* Date+Extension.swift in Sources */,
 				2E033CD320F49D1A0057E157 /* BaseViewModel.swift in Sources */,
@@ -551,13 +631,19 @@
 				2E033CCE20F496B20057E157 /* String+Extension.swift in Sources */,
 				2E033CCD20F496B20057E157 /* UIView+Extension.swift in Sources */,
 				2E033CF120F4AE760057E157 /* Constants.swift in Sources */,
+				2EA0707E20F590A400F8AE5A /* TabarViewController.swift in Sources */,
 				2E033CD120F49D0E0057E157 /* LoginViewModel.swift in Sources */,
+				2EA0707A20F58FF100F8AE5A /* GloablVariables.swift in Sources */,
 				2E033CCB20F496B20057E157 /* NSObject+Extension.swift in Sources */,
+				2EA0708820F590F200F8AE5A /* CameraViewController.swift in Sources */,
+				2EA0708420F590E500F8AE5A /* MyPhotosViewController.swift in Sources */,
 				536A867220F12C8800FAE72D /* LoginViewController.swift in Sources */,
 				2E033CE920F4A1730057E157 /* ErrorTracker.swift in Sources */,
 				2E033CED20F4A2A80057E157 /* HomeViewController.swift in Sources */,
 				2E033CE420F4A1020057E157 /* NavigationCustom.swift in Sources */,
+				2EA0707F20F590A400F8AE5A /* TabbarItemContext.swift in Sources */,
 				2E033CCF20F496B20057E157 /* AppDelegate+Extension.swift in Sources */,
+				2EA0708E20F5996800F8AE5A /* HomeTableViewCell.swift in Sources */,
 				536A867620F12CA300FAE72D /* BaseViewController.swift in Sources */,
 				536A864020F10EF100FAE72D /* AppDelegate.swift in Sources */,
 			);

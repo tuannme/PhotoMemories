@@ -14,6 +14,8 @@ target 'PhotoMemories' do
     pod 'Google-Mobile-Ads-SDK'
     pod 'NVActivityIndicatorView'
     pod 'GoogleAPIClientForREST'
+    pod 'ESTabBarController-swift'
+    pod 'ParallaxHeader'
     pod 'GoogleSignIn'
     
 end

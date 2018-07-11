@@ -17,13 +17,19 @@ class LoginViewController: BaseViewController {
     override func setupView() {
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().signInSilently()
+    }
+    
+    private func gotoHome() {
+        let tabbar = TabarViewController()
+        navigationController?.pushViewController(tabbar, animated: true)
     }
 }
 
 extension LoginViewController: GIDSignInUIDelegate {
     
     func sign(inWillDispatch signIn: GIDSignIn!, error: Error!) {
-        
+        indicatorView.loading(true)
     }
     
     func sign(_ signIn: GIDSignIn!, dismiss viewController: UIViewController!) {
@@ -38,11 +44,10 @@ extension LoginViewController: GIDSignInUIDelegate {
 extension LoginViewController: GIDSignInDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            print("\(error.localizedDescription)")
-        } else {
-            print("result \(user.description)")
-        }
+        indicatorView.loading(false)
+        guard let user = user else { return }
+        GloablVariables.loginUser = user
+        gotoHome()
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
