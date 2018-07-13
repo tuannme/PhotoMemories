@@ -17,5 +17,6 @@ target 'PhotoMemories' do
     pod 'ESTabBarController-swift'
     pod 'MXSegmentedPager'
     pod 'GoogleSignIn'
+    pod 'PinterestLayout'
     
 end

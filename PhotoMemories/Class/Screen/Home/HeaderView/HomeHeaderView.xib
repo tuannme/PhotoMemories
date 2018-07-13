@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_ic" translatesAutoresizingMaskIntoConstraints="NO" id="a6i-4l-clL">
-                    <rect key="frame" x="30" y="50" width="60" height="60"/>
+                    <rect key="frame" x="30" y="70" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="FjX-IN-KTS"/>
                         <constraint firstAttribute="height" constant="60" id="eR7-7o-ruR"/>
@@ -33,7 +33,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="a6i-4l-clL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="Zcg-Po-YZP"/>
-                <constraint firstItem="a6i-4l-clL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="hHy-mz-r1z"/>
+                <constraint firstItem="a6i-4l-clL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="hHy-mz-r1z"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

@@ -37,7 +37,7 @@ class HomeHeaderView: UIView {
 
     func scale(_ param: CGFloat) {
         imageView.transform = CGAffineTransform(scaleX: param, y: param)
-        let space: CGFloat = 30.0
+        let space: CGFloat = 50.0
         imageLeadingConstraint.constant = space * param
         imageTopConstraint.constant = space * param
     }

@@ -21,7 +21,7 @@ class HomeContainerViewController: MXSegmentedPagerController {
         // Parallax Header
         segmentedPager.parallaxHeader.view = headerView
         segmentedPager.parallaxHeader.mode = .fill
-        segmentedPager.parallaxHeader.height = 100
+        segmentedPager.parallaxHeader.height = 150
         segmentedPager.parallaxHeader.minimumHeight = 20
         
         // Segmented Control customization
