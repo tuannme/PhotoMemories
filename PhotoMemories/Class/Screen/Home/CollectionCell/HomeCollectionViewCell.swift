@@ -1,12 +1,13 @@
 //
-//  HomeViewController.swift
+//  HomeCollectionViewCell.swift
 //  PhotoMemories
 //
-//  Created by nguyen.manh.tuanb on 7/10/18.
+//  Created by nguyen.manh.tuanb on 7/11/18.
 //  Copyright © 2018 Nguyen Manh Tuan. All rights reserved.
 //
 
 import UIKit
+import RxSwift
 
 private struct Constant {
     static let column: CGFloat = 3
@@ -21,22 +22,37 @@ private struct Constant {
     }
 }
 
-class HomeViewController: BaseViewController {
+class HomeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak private var collectionVIew: UICollectionView!
     
-    override func setupView() {
-        setupCollectionView()
-    }
+    var didScroll = PublishSubject<UIScrollView>()
+    var didStopScroll = PublishSubject<UIScrollView>()
+    let disposeBag = DisposeBag()
     
-    private func setupCollectionView() {
+    override func awakeFromNib() {
+        super.awakeFromNib()
         collectionVIew.delegate = self
         collectionVIew.dataSource = self
         collectionVIew.register(HomeMenuCell.self)
     }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        didScroll.onNext(scrollView)
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            didStopScroll.onNext(scrollView)
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        didStopScroll.onNext(scrollView)
+    }
 }
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HomeCollectionViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 50
     }
@@ -49,7 +65,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 }
 
-extension HomeViewController: UICollectionViewDelegateFlowLayout {
+extension HomeCollectionViewCell: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
