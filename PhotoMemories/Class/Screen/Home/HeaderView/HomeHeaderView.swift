@@ -33,12 +33,16 @@ class HomeHeaderView: UIView {
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
+        
+        imageView.clipsToBounds = true
+        imageView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        imageView.layer.cornerRadius = 15
     }
 
     func scale(_ param: CGFloat) {
-        imageView.transform = CGAffineTransform(scaleX: param, y: param)
-        let space: CGFloat = 50.0
-        imageLeadingConstraint.constant = space * param
-        imageTopConstraint.constant = space * param
+        let scale = min(param, 2)
+        imageLeadingConstraint.constant = 20 * scale
+        imageTopConstraint.constant = UIDevice.current.screenType == .iPhoneX ? 40 * scale : 20 * scale
+        imageView.transform = CGAffineTransform(scaleX: scale, y: scale)
     }
 }

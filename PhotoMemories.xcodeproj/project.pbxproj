@@ -30,6 +30,7 @@
 		2E033CF120F4AE760057E157 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E033CF020F4AE760057E157 /* Constants.swift */; };
 		2E033CF320F4AF1E0057E157 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E033CF220F4AF1E0057E157 /* GoogleService-Info.plist */; };
 		2E033CF520F4B4E30057E157 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E033CF420F4B4E30057E157 /* Bundle+Extension.swift */; };
+		2E32590E20FC809E006FA213 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32590D20FC809E006FA213 /* UIDevice+Extension.swift */; };
 		2EA0707A20F58FF100F8AE5A /* GloablVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0707920F58FF100F8AE5A /* GloablVariables.swift */; };
 		2EA0707E20F590A400F8AE5A /* TabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0707C20F590A400F8AE5A /* TabarViewController.swift */; };
 		2EA0707F20F590A400F8AE5A /* TabbarItemContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0707D20F590A400F8AE5A /* TabbarItemContext.swift */; };
@@ -102,6 +103,7 @@
 		2E033CF020F4AE760057E157 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2E033CF220F4AF1E0057E157 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E033CF420F4B4E30057E157 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		2E32590D20FC809E006FA213 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		2EA0707920F58FF100F8AE5A /* GloablVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloablVariables.swift; sourceTree = "<group>"; };
 		2EA0707C20F590A400F8AE5A /* TabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabarViewController.swift; sourceTree = "<group>"; };
 		2EA0707D20F590A400F8AE5A /* TabbarItemContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarItemContext.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		2E033CBB20F4966D0057E157 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2E32590D20FC809E006FA213 /* UIDevice+Extension.swift */,
 				2E033CC520F496B20057E157 /* AppDelegate+Extension.swift */,
 				2E033CBC20F496B10057E157 /* Date+Extension.swift */,
 				2E033CC220F496B20057E157 /* Double+Extension.swift */,
@@ -670,6 +673,7 @@
 				2E033CD320F49D1A0057E157 /* BaseViewModel.swift in Sources */,
 				2EFC257820F8933700681812 /* Feeds.swift in Sources */,
 				2E033CCC20F496B20057E157 /* Double+Extension.swift in Sources */,
+				2E32590E20FC809E006FA213 /* UIDevice+Extension.swift in Sources */,
 				2E033CE020F4A0EA0057E157 /* IndicatorCustomView.swift in Sources */,
 				2E033CCE20F496B20057E157 /* String+Extension.swift in Sources */,
 				2E033CCD20F496B20057E157 /* UIView+Extension.swift in Sources */,

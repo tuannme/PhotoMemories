@@ -20,23 +20,23 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jh9-77-5ft">
-                        <rect key="frame" x="5" y="5" width="245" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="190"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="180" id="khR-35-El3"/>
+                            <constraint firstAttribute="height" constant="190" id="khR-35-El3"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="10"/>
+                                <real key="value" value="0.0"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="Jh9-77-5ft" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="4Kd-Y7-txn"/>
-                <constraint firstItem="Jh9-77-5ft" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="FOF-TI-v6I"/>
-                <constraint firstAttribute="bottom" secondItem="Jh9-77-5ft" secondAttribute="bottom" constant="5" id="aAN-dE-VW0"/>
-                <constraint firstAttribute="trailing" secondItem="Jh9-77-5ft" secondAttribute="trailing" constant="5" id="ifE-Eh-kri"/>
+                <constraint firstItem="Jh9-77-5ft" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Kd-Y7-txn"/>
+                <constraint firstItem="Jh9-77-5ft" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FOF-TI-v6I"/>
+                <constraint firstAttribute="bottom" secondItem="Jh9-77-5ft" secondAttribute="bottom" id="aAN-dE-VW0"/>
+                <constraint firstAttribute="trailing" secondItem="Jh9-77-5ft" secondAttribute="trailing" id="ifE-Eh-kri"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="255" height="190"/>

@@ -54,7 +54,7 @@ class HomeViewController: BaseViewController {
 extension HomeViewController: PinterestLayoutDelegate {
     func collectionView(collectionView: UICollectionView,
                         heightForImageAtIndexPath indexPath: IndexPath, withWidth: CGFloat) -> CGFloat {
-        let array: [CGFloat] = [80, 130, 200, 120, 130]
+        let array: [CGFloat] = [130, 200, 120, 130]
         let random = array.randomElement()
         return random
     }
