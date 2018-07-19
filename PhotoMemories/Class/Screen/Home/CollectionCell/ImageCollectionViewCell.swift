@@ -8,12 +8,14 @@
 
 import UIKit
 import PinterestLayout
-import Kingfisher
+import RxSwift
 
 class ImageCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak private var imageViewHeightLayoutConstraint: NSLayoutConstraint!
     @IBOutlet weak private var imageView: UIImageView!
+    
+    private let bag = DisposeBag()
     
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
@@ -23,8 +25,6 @@ class ImageCollectionViewCell: UICollectionViewCell {
     }
     
     func bindingFeed(_ feed: Feeds) {
-        guard let url = URL(string: feed.url) else { return }
-        imageView.kf.setImage(with: url)
+        imageView.loadFeedImage(feed, bag: bag)
     }
-
 }

@@ -9,10 +9,12 @@
 import Foundation
 
 struct Feeds {
-    var url: String
     var comment: String?
+    var name: String
+    var id: String
     
-    init(url: String) {
-        self.url = url
+    init(identifier: String, name: String = "") {
+        self.id = identifier
+        self.name = name
     }
 }

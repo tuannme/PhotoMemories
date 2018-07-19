@@ -20,11 +20,6 @@ final class HomeViewModel: BaseViewModel {
     }
     
     private func loadFeeds(feedType: FeedType) {
-        var feedsArray: [Feeds] = []
-        for _ in 1...40 {
-            let feed = Feeds(url: "https://i.imgur.com/m4lAhhr.jpg")
-            feedsArray.append(feed)
-        }
-        feeds.accept(feedsArray)
+        GDriveService.instance.fectch().bind(to: feeds).disposed(by: disposeBag)
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeHeaderView: UIView {
 
@@ -37,12 +38,14 @@ class HomeHeaderView: UIView {
         imageView.clipsToBounds = true
         imageView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         imageView.layer.cornerRadius = 15
+        guard let imageURL = GlobalVariables.loginUser.profile.imageURL(withDimension: 120) else { return }
+        imageView.kf.setImage(with: imageURL)
     }
 
     func scale(_ param: CGFloat) {
-        let scale = min(param, 2)
+        let scale = min(param, 3)
         imageLeadingConstraint.constant = 20 * scale
-        imageTopConstraint.constant = UIDevice.current.screenType == .iPhoneX ? 40 * scale : 20 * scale
+        imageTopConstraint.constant = UIDevice.current.screenType == .iPhoneX ? 40 * scale : 30 * scale
         imageView.transform = CGAffineTransform(scaleX: scale, y: scale)
     }
 }

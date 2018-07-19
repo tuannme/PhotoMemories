@@ -8,6 +8,7 @@
 
 import UIKit
 import ESTabBarController_swift
+import ALCameraViewController
 
 class TabarViewController: ESTabBarController {
     
@@ -52,6 +53,17 @@ class TabarViewController: ESTabBarController {
     }
     
     private func showCamera() {
+        let cameraViewController = CameraViewController { [weak self] image, _ in
+            if let image = image {
+                self?.didTakePhoto(image)
+            }
+            self?.dismiss(animated: true, completion: nil)
+        }
+        
+        present(cameraViewController, animated: true, completion: nil)
+    }
+    
+    private func didTakePhoto(_ photo: UIImage) {
         
     }
 }
