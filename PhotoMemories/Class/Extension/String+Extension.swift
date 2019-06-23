@@ -48,4 +48,8 @@ extension String {
         let url = "http://img.youtube.com/vi/\(self)/hqdefault.jpg"
         return url
     }
+    
+    func toPath() -> String {
+        return self.replacingOccurrences(of: "/", with: "_")
+    }
 }

@@ -7,72 +7,60 @@
 //
 
 import UIKit
-
-private struct Constant {
-    static let column: CGFloat = 3
-    static let minLineSpacing: CGFloat = 15.0
-    static let minItemSpacing: CGFloat = 15.0
-    static let offset: CGFloat = 21.0
-    
-    static func getItemWidth() -> CGFloat {
-        let boundWidth = UIScreen.main.bounds.width
-        let totalWidth = boundWidth - (offset + offset) - ((column - 1) * minItemSpacing)
-        return totalWidth / column
-    }
-}
+import PinterestLayout
 
 class HomeViewController: BaseViewController {
     
-    @IBOutlet weak private var collectionVIew: UICollectionView!
+    @IBOutlet weak private var collectionView: UICollectionView!
+    private var viewModel: HomeViewModel!
+    private var feedType = FeedType.trending
+    
+    convenience init(feedType: FeedType) {
+        self.init()
+        self.feedType = feedType
+    }
     
     override func setupView() {
         setupCollectionView()
     }
     
+    override func setupViewModel() {
+        viewModel = HomeViewModel(feedType: feedType)
+    }
+    
+    override func setupRx() {
+        viewModel.feeds
+            .asObservable()
+            .bind(to: collectionView.rx.items) { (collectionView, index, feed) -> UICollectionViewCell in
+                let cell = collectionView.dequeue(ImageCollectionViewCell.self,
+                                                  indexPath: IndexPath(row: index, section: 0))
+                cell.bindingFeed(feed)
+                return cell
+            }
+            .disposed(by: disposeBag)
+    }
+    
     private func setupCollectionView() {
-        collectionVIew.delegate = self
-        collectionVIew.dataSource = self
-        collectionVIew.register(HomeMenuCell.self)
+        let layout = PinterestLayout()
+        collectionView.collectionViewLayout = layout
+        collectionView.register(ImageCollectionViewCell.self)
+        
+        layout.delegate = self
+        layout.cellPadding = 5
+        layout.numberOfColumns = 2
     }
 }
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50
+extension HomeViewController: PinterestLayoutDelegate {
+    func collectionView(collectionView: UICollectionView,
+                        heightForImageAtIndexPath indexPath: IndexPath, withWidth: CGFloat) -> CGFloat {
+        let array: [CGFloat] = [130, 200, 120, 130]
+        let random = array.randomElement()
+        return random
     }
     
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeue(HomeMenuCell.self, indexPath: indexPath)
-        cell.backgroundColor = #colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1)
-        return cell
-    }
-}
-
-extension HomeViewController: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return Constant.minLineSpacing
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return Constant.minItemSpacing
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: Constant.offset, bottom: 0, right: Constant.offset)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemWidth = Constant.getItemWidth()
-        return CGSize(width: itemWidth, height: itemWidth)
+    func collectionView(collectionView: UICollectionView,
+                        heightForAnnotationAtIndexPath indexPath: IndexPath, withWidth: CGFloat) -> CGFloat {
+        return 0
     }
 }

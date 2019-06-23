@@ -10,7 +10,7 @@ import UIKit
 import MXSegmentedPager
 
 class HomeContainerViewController: MXSegmentedPagerController {
-
+    
     private let headerView = HomeHeaderView()
     private let headerTitles = ["Trending", "Following", "Saved"]
     
@@ -22,15 +22,22 @@ class HomeContainerViewController: MXSegmentedPagerController {
         segmentedPager.parallaxHeader.view = headerView
         segmentedPager.parallaxHeader.mode = .fill
         segmentedPager.parallaxHeader.height = 100
-        segmentedPager.parallaxHeader.minimumHeight = 20
+        segmentedPager.parallaxHeader.minimumHeight = UIDevice.current.screenType == .iPhoneX ? 44 : 20
         
         // Segmented Control customization
         segmentedPager.segmentedControl.selectionIndicatorLocation = .down
-        segmentedPager.segmentedControl.backgroundColor = .white
-        segmentedPager.segmentedControl.titleTextAttributes = [kCTForegroundColorAttributeName: #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)]
+        segmentedPager.segmentedControl.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        
+        let appleFont = UIFont(name: "AppleSDGothicNeo-Medium", size: 16)
+        
+        let titleAttributes = [NSAttributedStringKey.font: appleFont ?? UIFont.systemFont(ofSize: 16),
+                               kCTForegroundColorAttributeName: #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)] as [AnyHashable: Any]
+        segmentedPager.segmentedControl.titleTextAttributes = titleAttributes
         segmentedPager.segmentedControl.selectedTitleTextAttributes = [kCTForegroundColorAttributeName: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)]
         segmentedPager.segmentedControl.selectionStyle = .fullWidthStripe
         segmentedPager.segmentedControl.selectionIndicatorColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+
+        segmentedPager.segmentedControl.selectionIndicatorHeight = 3
     }
     
     override func segmentedPager(_ segmentedPager: MXSegmentedPager, titleForSectionAt index: Int) -> String {

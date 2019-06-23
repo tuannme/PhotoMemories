@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="PhotoMemories" customModuleProvider="target">
             <connections>
-                <outlet property="collectionVIew" destination="fXB-Ro-AuH" id="rpc-2G-HWE"/>
+                <outlet property="collectionView" destination="fXB-Ro-AuH" id="nRT-jd-BU6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

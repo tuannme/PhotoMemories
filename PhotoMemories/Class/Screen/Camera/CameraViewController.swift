@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CameraViewController: BaseViewController {
+class CameraXViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import GoogleSignIn
+import GoogleAPIClientForREST
 
 class LoginViewController: BaseViewController {
     
@@ -17,6 +18,7 @@ class LoginViewController: BaseViewController {
     override func setupView() {
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().scopes = [kGTLRAuthScopeDrive]
         GIDSignIn.sharedInstance().signInSilently()
     }
     
@@ -46,7 +48,8 @@ extension LoginViewController: GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         indicatorView.loading(false)
         guard let user = user else { return }
-        GloablVariables.loginUser = user
+        print("\(user.authentication.accessToken)")
+        GlobalVariables.loginUser = user
         gotoHome()
     }
     

@@ -9,6 +9,6 @@
 import Foundation
 import GoogleSignIn
 
-struct GloablVariables {
+struct GlobalVariables {
     static var loginUser: GIDGoogleUser!
 }
