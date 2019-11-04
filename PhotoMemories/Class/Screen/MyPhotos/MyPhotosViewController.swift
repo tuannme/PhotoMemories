@@ -10,9 +10,4 @@ import UIKit
 
 class MyPhotosViewController: BaseViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
 }
